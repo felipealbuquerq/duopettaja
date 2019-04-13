@@ -46,7 +46,7 @@ class Skill extends Component {
               <b>Lesson { ++index } of {array.length}</b>
             </p>
             <p>
-              <span>{lesson.words.join(', ')}</span>
+              <span>{lesson.words || lesson.words.join(', ')}</span>
             </p>
             <p>
               { lesson.completed
